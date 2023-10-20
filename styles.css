@@ -1,0 +1,111 @@
+:root {
+  --color1: rgb(214, 252, 229);
+  --color2: rgb(144, 236, 138);
+}
+
+body {
+  background-color: var(--color1);
+  font-family: fantasy;
+  margin: 0;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var (--color2);
+  font-family: sans-serif;
+  border-radius: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+.search::placeholder {
+  color: white;
+  text-align: center;
+  padding: 7px;
+}
+header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color2);
+}
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  color: white;
+}
+input {
+  width: 100%;
+}
+
+button {
+  margin: 10px;
+  height: 40px;
+  width: 80px;
+  justify-content: center;
+  background-color: var(--color1);
+  color: var(--color2);
+  font-size: large;
+  border-radius: 5px;
+}
+
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+
+.objeto {
+  width: 150px;
+  /* height: 80px; */
+  margin: 1rem;
+  background-color: var(--color1);
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.objeto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-info {
+  margin-top: 0;
+  text-align: center;
+}
+.movie-info span {
+  background-color: var(--color2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+.movie-info span.green {
+  color: white;
+}
+
+.overview {
+  background-color: rgb(237, 239, 245);
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+}
+
+.objeto:hover .overview {
+  transform: translateY(0);
+}

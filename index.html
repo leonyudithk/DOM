@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <form id="formulario">
+        <label for="nombre">Nombre o Descripción:</label>
+        <input type="text" id="nombre" required />
+
+        <label>Seleccionar Imagen:</label>
+        <input type="file" id="imagen" accept="image/*" required />
+
+        <button type="button" onclick="AgregarImagen()">Cargar</button>
+      </form>
+      <form id="form">
+        <input
+          type="text"
+          id="num"
+          class="search"
+          placeholder="Ingrese la Busqueda"
+        />
+        <button type="submit">Buscar</button>
+      </form>
+    </header>
+
+    <div id="galeria"></div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
